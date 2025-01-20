@@ -1,0 +1,19 @@
+name: frr
+
+services:
+  frr:
+    image: frr:10.2.1-ubuntu
+    container_name: frr
+    restart: unless-stopped
+    environment:
+      - "TZ=Asia/Shanghai"
+    ports:
+      - "2600-2619:2600-2619"
+      - "50051:50051"
+    networks:
+      - frr_net
+    volumes:
+      - ./conf/daemons:/etc/frr/daemons
+
+networks:
+  frr_net:
