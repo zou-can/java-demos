@@ -4,6 +4,10 @@ out/
 *.iml
 cmake-build-*/
 
+# VSCode
+.vscode/**
+!.vscode/java-formatter.xml
+
 # Compiled class file
 *.class
 
