@@ -15,6 +15,7 @@
         <module>algorithms</module>
         <module>async-hbase</module>
         <module>frr</module>
+        <module>flink</module>
     </modules>
 
 </project>
